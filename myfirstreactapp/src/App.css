@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles for the header as a navigation bar */
+.App-header {
+  background-color: #ffffff; /* White background for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; /* Add padding for some spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for the navbar */
+}
+
+.logo {
+  height: 50px; /* Adjust the logo size as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between nav items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333; /* Dark color for links */
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #000000; /* Black color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+
+.App-footer {
+  background-color: #511919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* SearchBar */
+
+.search-bar-container {
+  display: flex;
+  justify-content: center; /* Center the search bar horizontally */
+  margin-top: 5rem; /* Space between the header and search bar */
+  width: 100%; /* Ensure the container takes the full width of its parent */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust this value for the desired maximum width */
+  margin: 0 auto; /* Center the form within its container */
+}
+
+input {
+  width: 100%; /* Full width of the form */
+  padding: 0.75rem; /* Add padding for a more spacious input */
+  font-size: 1.2rem; /* Increase font size for better readability */
+  border: 1px solid #b6f3ba; /* Light gray border similar to Google's */
+  border-radius: 24px; /* Rounded corners similar to Google's style */
+}
+
+button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #b6f3ba;
+  color: black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(87, 127, 87);
+}
+
+.Title {
+  padding: 2rem;
+  color: rgb(164, 223, 164);
+  font-size: 40px;
+}
